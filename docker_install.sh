@@ -19,7 +19,7 @@ function install_docker() {
             return 2
         fi
     else
-        curl http://apollo-pkg-beta.bj.bcebos.com/get_docker.sh | sh && sudo systemctl --now enable docker
+        curl https://github.com/grant-tt/docker/blob/main/get_docker.sh | sh && sudo systemctl --now enable docker
 	if [ $? -ne 0 ]
 	then
 	    echo "install docker failed!"
